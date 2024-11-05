@@ -51,7 +51,7 @@ void cargarTablas() {
 
 // Función de costo de sustitución entre dos caracteres
 int cost_sub(char a, char b) {
-    cargarTablas(); // Asegurar que las tablas están cargadas
+    cargarTablas();
     int i = a - 'a';
     int j = b - 'a';
     return matriz_sub[i][j];
@@ -59,21 +59,21 @@ int cost_sub(char a, char b) {
 
 // Función de costo de inserción de un carácter
 int cost_ins(char b) {
-    cargarTablas(); // Asegurar que las tablas están cargadas
+    cargarTablas();
     int j = b - 'a';
     return fila_inser[j];
 }
 
 // Función de costo de eliminación de un carácter
 int cost_del(char a) {
-    cargarTablas(); // Asegurar que las tablas están cargadas
+    cargarTablas();
     int i = a - 'a';
     return fila_elim[i];
 }
 
 // Función de costo de transposición entre dos caracteres
 int cost_trans(char a, char b) {
-    cargarTablas(); // Asegurar que las tablas están cargadas
+    cargarTablas();
     int i = a - 'a';
     int j = b - 'a';
     return matriz_trans[i][j];
