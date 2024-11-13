@@ -3,10 +3,10 @@
 #include <algorithm>
 #include <climits>
 using namespace std;
-#include "./CostosVariables/costos.h"
+#include "../CostosVariables/costos.h"
 
 
-int levenshtein_aux(const string& s1, const string& s2, int i, int j) {
+static int levenshtein_aux(const string& s1, const string& s2, int i, int j) {
     if (i == 0) {
         int costo = 0;
         for (int k = 0; k < j; k++) {
@@ -49,15 +49,4 @@ int levenshtein_aux(const string& s1, const string& s2, int i, int j) {
 // Función principal que oculta el uso de índices i y j
 int levenshtein_BF(const string& s1, const string& s2) {
     return levenshtein_aux(s1, s2, s1.size(), s2.size());
-}
-
-int main(){
-    string s1, s2;
-    cout << "String 1: ";
-    cin >> s1;
-    cout << "String 2: ";
-    cin >> s2;
-    int costo_MIN = levenshtein_BF(s1, s2);
-    cout << costo_MIN << endl;
-    return 0;
 }

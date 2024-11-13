@@ -4,7 +4,7 @@
 #include <vector>
 #include <climits>
 using namespace std;
-#include "./CostosVariables/costos.h"
+#include "../CostosVariables/costos.h"
 
 using Matriz = vector<vector<int>>;
 
@@ -54,15 +54,4 @@ int levenshtein_DP(const string& s1, const string& s2) {
 
     // El resultado final esta en el ultimo slot de la matriz
     return dp[n][m];
-}
-
-int main(){
-    string s1, s2;
-    cout << "String 1: ";
-    cin >> s1;
-    cout << "String 2: ";
-    cin >> s2;
-    int costo_MIN = levenshtein_DP(s1, s2);
-    cout << costo_MIN << endl;
-    return 0;
 }
