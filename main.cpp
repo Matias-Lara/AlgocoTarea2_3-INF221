@@ -109,6 +109,6 @@ int main() {
     }
     salida_dp.close();
 
-    cout << "Resultados guardados correctamente." << endl;
+    cout << "Resultados guardados correctamente :)" << endl;
     return 0;
 }

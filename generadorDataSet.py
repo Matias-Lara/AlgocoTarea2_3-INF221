@@ -75,7 +75,7 @@ def generate_common_substring(file_name, lengths):
                 writer.writerow([length, length, s1, s2])
 
 # Longitudes de cadenas para los datasets
-lengths_comun = [3, 6, 10]
+lengths_comun = [3, 6, 10, 12, 14]
 
 # Generación de los datasets en la carpeta DataSet_comun
 generate_empty_vs_n("DataSet_comun/empty_vs_n.csv", lengths_comun)
@@ -84,7 +84,7 @@ generate_transpositions("DataSet_comun/transpositions.csv", lengths_comun)
 generate_high_similarity("DataSet_comun/high_similarity.csv", lengths_comun)
 generate_common_substring("DataSet_comun/common_substring.csv", lengths_comun)
 
-lengths_dp = [2**5, 2**6, 2**7, 2**8, 2**9, 2**10, 2**11, 2**12]
+lengths_dp = [2**5, 2**6, 2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13]
 # Generación del dataset en la carpeta DataSet_dp
 generate_random_nxm("DataSet_dp/random_nxm.csv", lengths_dp)
 
