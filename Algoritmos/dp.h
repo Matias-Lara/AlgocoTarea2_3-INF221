@@ -4,6 +4,6 @@
 #include <string>
 using namespace std;
 
-int levenshtein_DP(const string& s1, const string& s2);
+int edit_distance_DP(const string& s1, const string& s2);
 
 #endif 

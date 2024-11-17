@@ -9,7 +9,7 @@ using namespace std;
 using Matriz = vector<vector<int>>;
 
 // Función para calcular la distancia de Levenshtein con costos variables usando programación dinámica
-int levenshtein_DP(const string& s1, const string& s2) {
+int edit_distance_DP(const string& s1, const string& s2) {
     int n = s1.size();
     int m = s2.size();
 

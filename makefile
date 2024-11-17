@@ -6,7 +6,7 @@ SOURCES = main.cpp Algoritmos/bf.cpp Algoritmos/dp.cpp CostosVariables/costos.cp
 
 # Compilador y banderas
 CXX = g++
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall -std=c++17
 
 # Regla para compilar todo
 $(EXEC): $(SOURCES)
