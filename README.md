@@ -5,6 +5,8 @@ Este proyecto contiene la implementación de dos algoritmos, Fuerza Bruta (BF) y
 ## Estructura del Proyecto
 
 A continuación, se describe la estructura de archivos y carpetas del proyecto:
+
+```
 .
 ├── Algoritmos
 │   ├── bf.cpp
@@ -35,6 +37,7 @@ A continuación, se describe la estructura de archivos y carpetas del proyecto:
 └── resultados
     ├── resultados_comun.csv
     └── resultados_dp.csv
+```
 
 ## Descripción del Flujo de Trabajo
 
